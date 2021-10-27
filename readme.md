@@ -8,11 +8,11 @@ Simple GitHub Action to run a command on a remote server using SSH. This is work
 
 ```yml
 - name: ls -a via ssh
-  uses: garygrossgarten/github-action-ssh@release
+  uses: joaohcrangel/github-action-ssh@release
   with:
     command: ls -a
     host: ${{ secrets.HOST }}
-    username: garygrossgarten
+    username: joaohcrangel
     passphrase: ${{ secrets.PASSPHRASE }}
     privateKey: ${{ secrets.PRIVATE_KEY}}
 ```
