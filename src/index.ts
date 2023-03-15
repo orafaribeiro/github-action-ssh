@@ -54,7 +54,7 @@ async function connect(
     };
     if (privateKey) {
       console.log('using provided private key');
-      config.privateKey = privateKey;
+      config.privateKey = Buffer.from(privateKey);
     }
     await ssh.connect(config);
     console.log(`🤝 Connected to ${host}.`);
